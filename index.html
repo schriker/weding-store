@@ -16,12 +16,30 @@
 <body>
     <!-- Header -->
     <div class="purple-bg">
-        <div class="container-fluid">
+        <div class="container-fluid header-bg">
             <div class="container">
                 <div class="row user-links">
-                    <div class="col-3">Dropdown</div>
+                    <div class="col-3 d-flex">
+                        <ul class="currency">
+                            <li>
+                                <a href="#">USD<i class="fa fa-angle-down"></i></a>
+                                <ul class="region-dropdown">
+                                    <li><a href="">EUR</a></li>
+                                    <li><a href="">PLN</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">English<i class="fa fa-angle-down"></i></a>
+                                <ul class="region-dropdown">
+                                    <li><a href="">Polish</a></li>
+                                    <li><a href="">Deutch</a></li>
+                                    <li><a href="">Francais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="col-9 d-flex justify-content-end">
-                        <ul>
+                        <ul class="currency">
                             <li><a href="#">My Account</a></li>
                             <li><a href="#">My Wishlist</a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -29,15 +47,55 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row text-center">
-                    <div class="col">Logo</div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="logo"><a href="#">Bride <img src="images/logo.png" alt="Logo Shape"> Store</a></h1>
+                        <p class="logo-year"><span class="year-shape gradient-1"></span>2017<span class="year-shape gradient-2"></span></p>
+                    </div>
                 </div>
             </div>
             <div class="row menu-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-9">Menu</div>
-                        <div class="col-3">Koszyk</div>
+                        <div class="col-8 d-flex">
+                            <ul class="main-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Favors</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#"><img src="images/menu-sale.jpg" alt=""></a></li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="#">Weding Favors</a></li>
+                                                <li><a href="#">Unique Favors</a></li>
+                                                <li><a href="#">Edible Favors</a></li>
+                                                <li><a href="#">Bubbles and Bells</a></li>
+                                                <li><a href="#">Personalized Glassware</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="#">Favor boxes and containers</a></li>
+                                                <li><a href="#">Favor Boxes</a></li>
+                                                <li><a href="#">Favor containers</a></li>
+                                                <li><a href="#">Favor Bags</a></li>
+                                                <li><a href="#">Guest Personalized Papper Bags</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Gifts</a></li>
+                                <li><a href="#">Decoration</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Stationary</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2 search">
+                            <input class="hide" type="text" placeholder="Search...">
+                            <i class="fa fa-search"></i><span>Search</span>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <div class="cart"><i class="fa fa-shopping-cart"></i><span>2 </span>Item(s)<i class="fa fa-angle-down"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
