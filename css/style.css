@@ -277,8 +277,29 @@ body{
 
 .cart{
     padding: 15px 0;
+    color:#3c3c3c;
+    text-transform: uppercase;
+}
+
+.cart:hover{
+    cursor: pointer;
+}
+
+.cart:hover > i:last-of-type{
+    transform: rotate(-180deg);
 }
 
 .cart i{
+    transition: all ease 0.3s;
     line-height: 1.5;
+}
+
+.cart span{
+    color: #c0ae7b;
+    padding: 0 5px;
+}
+
+.cart i:last-of-type{
+    color: #c0ae7b;
+    margin-left: 10px;
 }
