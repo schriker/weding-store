@@ -6,6 +6,10 @@ body{
     font-weight: 400;
 }
 
+.position-relative{
+    position: relative;
+}
+
 .purple-bg{
     background-image: url(../images/brown_bg.jpg);
 }
@@ -391,4 +395,83 @@ body{
     text-decoration: none;
     color: #fff;
     background-color: #c5b486;
+}
+
+.owl-carousel{
+    background: url(../images/slide-img.png);
+    background-size: cover;
+    height: 556px;
+}
+
+.slide{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 34px;
+}
+
+.slide span{
+    font-family: 'Crimson Text', serif;
+    color: #c5b486;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.slide h2{
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.slide p{
+    margin-bottom: 0;
+}
+
+.slide button{
+    background-color: #c5b486;
+    border: 3px solid transparent;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.slide button:hover{
+    cursor: pointer;
+    border: solid #c5b486 3px;
+    background-color: transparent;
+}
+
+.slider-nav{
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    z-index: 999;
+}
+
+.c-nav{
+    font-family: 'FontAwesome';
+    background-color: #ece9e0;
+    color: #99917b;
+    font-size: 18px;
+    padding: 3px 12px;
+}
+
+.c-nav:hover{
+    cursor: pointer;
+    background-color: #e4e1d7;
+}
+
+.prev-c{
+    margin-right: 1px;
+}
+
+.prev-c::before{
+    content: '\f104';
+}
+
+.next-c::before{
+    content: '\f105';
 }

@@ -30,6 +30,21 @@ $(function(){
         });
 
     });
+
+    var $owl = $(".owl-carousel");
     
+    $owl.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+    });
+
+    $('.prev-c').on('click', function(){
+        $owl.trigger('prev.owl.carousel');
+    });
+
+    $('.next-c').on('click', function(){
+        $owl.trigger('next.owl.carousel');
+    });
 });
 
