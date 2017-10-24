@@ -387,7 +387,7 @@ body{
     font-weight: 700;
     font-size: 15px;
     color: #c5b486;
-    border: solid #c5b486 3px;
+    border: solid #c5b486 2px;
     padding: 7px;
 }
 
@@ -398,8 +398,6 @@ body{
 }
 
 .owl-carousel{
-    background: url(../images/slide-img.png);
-    background-size: cover;
     height: 556px;
 }
 
@@ -408,6 +406,11 @@ body{
     text-transform: uppercase;
     font-weight: 900;
     font-size: 34px;
+}
+
+.slider-bg{
+    position: absolute;
+    
 }
 
 .slide span{
@@ -446,7 +449,7 @@ body{
 
 .slider-nav{
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 80px;
     z-index: 999;
 }
@@ -474,4 +477,63 @@ body{
 
 .next-c::before{
     content: '\f105';
+}
+
+.tabs-row{
+    margin-top: -30px;
+}
+
+.box-white-bg{
+    background-color: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    height: 170px;
+}
+
+.weding-dress{
+    background-color: #fff;
+    background: #fff url(../images/dress.jpg) top right no-repeat;
+}
+
+.jewellery{
+    background-color: #fff;
+    background: #fff url(../images/jewellery.jpg) top right no-repeat;
+}
+
+.bouquets{
+    background-color: #fff;
+    background: #fff url(../images/bouquets.jpg) top right no-repeat;
+}
+
+.cat-tab-content{
+    margin-left: 40px;
+    position: relative;
+}
+
+.cat-tab-content p{
+    font-size: 22px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+}
+
+.cat-tab-content button{
+    background-color: #fff;
+    outline: none; 
+    color: #c5b486;
+    border: solid #c5b486 2px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px;
+}
+
+.cat-tab-content a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cat-tab-content:hover button{
+    background-color: #c5b486;
+    color: #fff;
 }
