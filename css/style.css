@@ -537,3 +537,50 @@ body{
     background-color: #c5b486;
     color: #fff;
 }
+
+.items-title{
+    margin: 80px 0 30px 0;
+}
+
+.featured-items{
+    margin: 0;
+    padding: 0 0 15px 0;
+    display: flex;
+    border-bottom: solid 1px #eae7df;
+    position: relative;
+}
+
+.featured-items::after{
+    position: absolute;
+    content: '';
+    background-color: #eae7df;
+    height: 3px;
+    width: 35px;
+    bottom: 0;
+
+}
+
+.featured-items li{
+    list-style: none;
+    float: left;
+}
+
+.featured-items li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ababab;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.featured-items li a:hover{
+    color: #959595;
+}
+
+.featured-items li:first-child a{
+    padding-left: 0;
+}
+
+.active-tab{
+    color: #3c3c3c !important;
+}
