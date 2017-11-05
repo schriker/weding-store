@@ -1,4 +1,5 @@
 $(function(){
+    // Search Form Animation
     var $searchBtn = $('.search').find('span');
 
     $searchBtn.on('click', function(){
@@ -31,6 +32,7 @@ $(function(){
 
     });
 
+    // Main Carousel Steing
     var $owl = $(".owl-carousel");
     
     $owl.owlCarousel({
@@ -47,8 +49,36 @@ $(function(){
         $owl.trigger('next.owl.carousel');
     });
 
+    // Main Page Quantity Selection
     (function quickQuantinty(){
-        
+
+        var $el = $('.q-add-quantity');
+        var $decrease = $el.find('.decrease');
+        var $increase = $el.find('.increase');
+        var $input = $el.find('input');
+
+        $input.on('click', selectRange);
+
+        $decrease.on('click', quantity);
+        $increase.on('click', quantity);
+
+        function quantity(e){
+
+            e.preventDefault();
+            var input = $(this).siblings('input');
+            
+            if ($(this).hasClass('increase')){
+                input.val(+input.val() + 1);
+            }
+            else if (parseInt(input.val()) > 0){
+                input.val(+input.val() - 1);
+            }
+        }
+
+        function selectRange(){
+            $(this)[0].setSelectionRange(0, $(this).length);
+        }
+
     })();
 });
 

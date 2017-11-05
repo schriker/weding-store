@@ -658,6 +658,10 @@ body{
     margin: 0 1px;
 }
 
+.q-add-quantity input:hover{
+    cursor: pointer;
+}
+
 .decrease, .increase{
     display: inline-block;
     width: 30px;
