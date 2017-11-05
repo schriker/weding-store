@@ -46,5 +46,9 @@ $(function(){
     $('.next-c').on('click', function(){
         $owl.trigger('next.owl.carousel');
     });
+
+    (function quickQuantinty(){
+        
+    })();
 });
 

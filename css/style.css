@@ -454,7 +454,7 @@ body{
     z-index: 999;
 }
 
-.c-nav{
+.c-nav, .items-nav-c{
     font-family: 'FontAwesome';
     background-color: #ece9e0;
     color: #99917b;
@@ -462,20 +462,20 @@ body{
     padding: 3px 12px;
 }
 
-.c-nav:hover{
+.c-nav:hover, .items-nav-c:hover{
     cursor: pointer;
     background-color: #e4e1d7;
 }
 
-.prev-c{
+.prev-c, .items-nav-prev{
     margin-right: 1px;
 }
 
-.prev-c::before{
+.prev-c::before, .items-nav-prev::before{
     content: '\f104';
 }
 
-.next-c::before{
+.next-c::before, .items-nav-next::before{
     content: '\f105';
 }
 
@@ -486,7 +486,7 @@ body{
 .box-white-bg{
     background-color: #fff;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
-    height: 170px;
+    min-height: 170px;
 }
 
 .weding-dress{
@@ -523,7 +523,7 @@ body{
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 7px;
+    padding: 10px;
 }
 
 .cat-tab-content a{
@@ -539,14 +539,27 @@ body{
 }
 
 .items-title{
-    margin: 80px 0 30px 0;
+    position: relative;
+    margin: 80px 0 40px 0;
+    border-bottom: solid 1px #eae7df;
+}
+
+.items-nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.items-nav-c{
+    font-size: 16px;
+    display: inline-block;
+    padding: 1px 10px;
 }
 
 .featured-items{
     margin: 0;
     padding: 0 0 15px 0;
-    display: flex;
-    border-bottom: solid 1px #eae7df;
+    display: flex; 
     position: relative;
 }
 
@@ -583,4 +596,168 @@ body{
 
 .active-tab{
     color: #3c3c3c !important;
+}
+
+.item-box{
+    position: relative;
+}
+
+.item-box:hover > .item-thumbnail .item-details{
+    opacity: 1;
+}
+
+.item-thumbnail{
+    position: relative;
+}
+
+.thumbnail-img{
+    margin-top: 20px;
+}
+
+.item-details{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 219, 206, 0.65);
+    z-index: 200;
+    transition: opacity linear 0.2s;
+}
+
+.q-add-cart-form{
+    text-align: center;
+}
+
+.q-add-cart-form button{
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    border: solid #fff 2px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.q-add-cart-form button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #e17373;
+}
+
+.q-add-quantity input{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    color: #c0ae7b;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0 1px;
+}
+
+.decrease, .increase{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+.user-options{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-large{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+}
+
+.user-options a:first-of-type{
+    margin-bottom: 1px;
+}
+
+.item-details-btn{
+    background-color: #fff;
+    color: #c0ae7b;
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+.item-details-btn:hover{
+    color: #e17373;
+    text-decoration: none;
+}
+
+.add-to-fav::before{
+    content: '\f004';
+}
+
+.add-to-compare::before{
+    content: '\f080';
+}
+
+.view-large a::before{
+    content: '\f002';
+}
+
+.view-large a{
+    padding: 5px 9.5px;
+}
+
+.item-box > a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.item-name-price{
+    font-size: 18px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid #f1efe9;
+    padding: 15px 0;
+}
+
+.item-name-price p{
+    margin-bottom: 5px;
+}
+
+.item-name-price p:last-of-type{
+    font-weight: 700;
+}
+
+.item-badges{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.item-badges a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 8px;
+}
+
+.new-badge{
+    background-color: #4c4c4c;
+}
+
+.sale-badge{
+    background-color: #e17373;
 }
