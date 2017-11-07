@@ -202,10 +202,10 @@
             <div class="row">
                 <div class="col">
                     <div class="items-title">
-                        <ul class="featured-items">
-                            <li><a class="active-tab" href="#">Featured Items</a></li>
-                            <li><a href="#">Bestsellers</a></li>
-                            <li><a href="#">On Sale</a></li>
+                        <ul id="myTab" class="nav featured-items" role="tablist">
+                            <li><a class="active"  id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="true">Featured Items</a></li>
+                            <li><a id="best-tab" id="bestsellers-tab" data-toggle="tab" href="#bestsellers" role="tab" aria-controls="bestsellers" aria-selected="false">Bestsellers</a></li>
+                            <li><a id="sale-tab" id="sale-tab" data-toggle="tab" href="#sale" role="tab" aria-controls="sale" aria-selected="false">On Sale</a></li>
                         </ul>
                         <div class="items-nav">
                             <div class="items-nav-c items-nav-prev"></div><div class="items-nav-c items-nav-next"></div>
@@ -213,129 +213,185 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="item-box box-white-bg d-flex flex-column">
-                        <a href="#"></a>
-                        <div class="text-center item-thumbnail">
-                            <div class="item-details align-items-center justify-content-center">
-                                <div class="q-add-cart-form d-flex flex-column">
-                                    <button>Add To Cart</button>
-                                    <div class="q-add-quantity d-flex align-self-center">
-                                        <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
-                                    </div>
-                                </div>
-                                <div class="view-large">
-                                    <a href="#" class="item-details-btn"></a>
-                                </div>
-                                <div class="user-options">
-                                    <a href="#" class="item-details-btn add-to-fav"></a>
-                                    <a href="#" class="item-details-btn add-to-compare"></a>
-                                </div>  
-                            </div>
-                            <div class="item-badges">
-                                <a class="new-badge" href="">NEW</a><a class="sale-badge" href="">-10%</a>
-                            </div>
-                            <img class="img-fluid thumbnail-img" src="images/item-2.jpg" alt="">
-                        </div>
-                        <div class="text-center item-name-price">
-                            <p>White gift box</p>
-                            <p>$69.00</p>
-                        </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                    <div class="row">
+                        Tab 1
                     </div>
                 </div>
-                <div class="col">
-                    <div class="item-box box-white-bg d-flex flex-column">
-                        <a href="#"></a>
-                        <div class="text-center item-thumbnail">
-                            <div class="item-details align-items-center justify-content-center">
-                                <div class="q-add-cart-form d-flex flex-column">
-                                    <button>Add To Cart</button>
-                                    <div class="q-add-quantity d-flex align-self-center">
-                                        <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
-                                    </div>
-                                </div>
-                                <div class="view-large">
-                                    <a href="#" class="item-details-btn"></a>
-                                </div>
-                                <div class="user-options">
-                                    <a href="#" class="item-details-btn add-to-fav"></a>
-                                    <a href="#" class="item-details-btn add-to-compare"></a>
-                                </div>  
-                            </div>
-                            <div class="item-badges">
-                                <a class="sale-badge" href="">-10%</a>
-                            </div>
-                            <img class="img-fluid thumbnail-img" src="images/item-1.jpg" alt="">
-                        </div>
-                        <div class="text-center item-name-price">
-                            <p>White gift box</p>
-                            <p>$69.00</p>
-                        </div>
+                <div class="tab-pane fade" id="bestsellers" role="tabpanel" aria-labelledby="bestsellers-tab">
+                    <div class="row">
+                        Tab 2
                     </div>
                 </div>
-                <div class="col">
-                    <div class="item-box box-white-bg d-flex flex-column">
-                        <a href="#"></a>
-                        <div class="text-center item-thumbnail">
-                            <div class="item-details align-items-center justify-content-center">
-                                <div class="q-add-cart-form d-flex flex-column">
-                                    <button>Add To Cart</button>
-                                    <div class="q-add-quantity d-flex align-self-center">
-                                        <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
-                                    </div>
-                                </div>
-                                <div class="view-large">
-                                    <a href="#" class="item-details-btn"></a>
-                                </div>
-                                <div class="user-options">
-                                    <a href="#" class="item-details-btn add-to-fav"></a>
-                                    <a href="#" class="item-details-btn add-to-compare"></a>
-                                </div>  
-                            </div>
-                            <div class="item-badges">
-                                <a class="new-badge" href="">NEW</a>
-                            </div>
-                            <img class="img-fluid thumbnail-img" src="images/item-2.jpg" alt="">
-                        </div>
-                        <div class="text-center item-name-price">
-                            <p>White gift box</p>
-                            <p>$69.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="item-box box-white-bg d-flex flex-column">
-                        <a href="#"></a>
-                        <div class="text-center item-thumbnail">
-                            <div class="item-details align-items-center justify-content-center">
-                                <div class="q-add-cart-form d-flex flex-column">
-                                    <button>Add To Cart</button>
-                                    <div class="q-add-quantity d-flex align-self-center">
-                                        <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
-                                    </div>
-                                </div>
-                                <div class="view-large">
-                                    <a href="#" class="item-details-btn"></a>
-                                </div>
-                                <div class="user-options">
-                                    <a href="#" class="item-details-btn add-to-fav"></a>
-                                    <a href="#" class="item-details-btn add-to-compare"></a>
-                                </div>  
-                            </div>
-                            <img class="img-fluid thumbnail-img" src="images/item-1.jpg" alt="">
-                        </div>
-                        <div class="text-center item-name-price">
-                            <p>White gift box</p>
-                            <p>$69.00</p>
-                        </div>
+                <div class="tab-pane fade" id="sale" role="tabpanel" aria-labelledby="sale-tab">
+                    <div class="row">
+                        Tab 3
                     </div>
                 </div>
             </div>
+
+
+
+            
+
+            
+
+            
+            
+
+
+            
         <!-- Featured -->
     </div>
+
+
+
+
+
+
+
+
+   <!-- 
+       
+    
+    
+    
+                        
+                        <div class="col">
+                            <div class="item-box box-white-bg d-flex flex-column">
+                                <a href="#"></a>
+                                <div class="text-center item-thumbnail">
+                                    <div class="item-details align-items-center justify-content-center">
+                                        <div class="q-add-cart-form d-flex flex-column">
+                                            <button>Add To Cart</button>
+                                            <div class="q-add-quantity d-flex align-self-center">
+                                                <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="view-large">
+                                            <a href="#" class="item-details-btn"></a>
+                                        </div>
+                                        <div class="user-options">
+                                            <a href="#" class="item-details-btn add-to-fav"></a>
+                                            <a href="#" class="item-details-btn add-to-compare"></a>
+                                        </div>  
+                                    </div>
+                                    <div class="item-badges">
+                                        <a class="new-badge" href="">NEW</a><a class="sale-badge" href="">-10%</a>
+                                    </div>
+                                    <img class="img-fluid thumbnail-img" src="images/item-2.jpg" alt="">
+                                </div>
+                                <div class="text-center item-name-price">
+                                    <p>White gift box</p>
+                                    <p>$69.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-box box-white-bg d-flex flex-column">
+                                <a href="#"></a>
+                                <div class="text-center item-thumbnail">
+                                    <div class="item-details align-items-center justify-content-center">
+                                        <div class="q-add-cart-form d-flex flex-column">
+                                            <button>Add To Cart</button>
+                                            <div class="q-add-quantity d-flex align-self-center">
+                                                <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="view-large">
+                                            <a href="#" class="item-details-btn"></a>
+                                        </div>
+                                        <div class="user-options">
+                                            <a href="#" class="item-details-btn add-to-fav"></a>
+                                            <a href="#" class="item-details-btn add-to-compare"></a>
+                                        </div>  
+                                    </div>
+                                    <div class="item-badges">
+                                        <a class="sale-badge" href="">-10%</a>
+                                    </div>
+                                    <img class="img-fluid thumbnail-img" src="images/item-1.jpg" alt="">
+                                </div>
+                                <div class="text-center item-name-price">
+                                    <p>White gift box</p>
+                                    <p>$69.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-box box-white-bg d-flex flex-column">
+                                <a href="#"></a>
+                                <div class="text-center item-thumbnail">
+                                    <div class="item-details align-items-center justify-content-center">
+                                        <div class="q-add-cart-form d-flex flex-column">
+                                            <button>Add To Cart</button>
+                                            <div class="q-add-quantity d-flex align-self-center">
+                                                <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="view-large">
+                                            <a href="#" class="item-details-btn"></a>
+                                        </div>
+                                        <div class="user-options">
+                                            <a href="#" class="item-details-btn add-to-fav"></a>
+                                            <a href="#" class="item-details-btn add-to-compare"></a>
+                                        </div>  
+                                    </div>
+                                    <div class="item-badges">
+                                        <a class="new-badge" href="">NEW</a>
+                                    </div>
+                                    <img class="img-fluid thumbnail-img" src="images/item-2.jpg" alt="">
+                                </div>
+                                <div class="text-center item-name-price">
+                                    <p>White gift box</p>
+                                    <p>$69.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-box box-white-bg d-flex flex-column">
+                                <a href="#"></a>
+                                <div class="text-center item-thumbnail">
+                                    <div class="item-details align-items-center justify-content-center">
+                                        <div class="q-add-cart-form d-flex flex-column">
+                                            <button>Add To Cart</button>
+                                            <div class="q-add-quantity d-flex align-self-center">
+                                                <a href="#" class="item-details-btn decrease">-</a><input type="text" value="0"><a href="#" class="item-details-btn increase">+</a>
+                                            </div>
+                                        </div>
+                                        <div class="view-large">
+                                            <a href="#" class="item-details-btn"></a>
+                                        </div>
+                                        <div class="user-options">
+                                            <a href="#" class="item-details-btn add-to-fav"></a>
+                                            <a href="#" class="item-details-btn add-to-compare"></a>
+                                        </div>  
+                                    </div>
+                                    <img class="img-fluid thumbnail-img" src="images/item-1.jpg" alt="">
+                                </div>
+                                <div class="text-center item-name-price">
+                                    <p>White gift box</p>
+                                    <p>$69.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                -->
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
