@@ -397,7 +397,7 @@ body{
     background-color: #c5b486;
 }
 
-.owl-carousel{
+.main-owl-carousel{
     height: 556px;
 }
 
@@ -594,12 +594,13 @@ body{
     padding-left: 0;
 }
 
-.active{
+.featured-items .active{
     color: #3c3c3c !important;
 }
 
 .item-box{
     position: relative;
+    margin-bottom: 15px;
 }
 
 .item-box:hover > .item-thumbnail .item-details{

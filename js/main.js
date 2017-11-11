@@ -33,7 +33,7 @@ $(function(){
     });
 
     // Main Carousel Steing
-    var $owl = $(".owl-carousel");
+    var $owl = $(".main-owl-carousel");
     
     $owl.owlCarousel({
         items: 1,
@@ -80,5 +80,25 @@ $(function(){
         }
 
     })();
+    // Items Carousel 
+    (function productsCarousel(){
+        
+        $carouselEl = $('.products-carousel');
+        $carouselEl.owlCarousel({
+            items: 4,
+        });
+
+        $('.items-nav-prev').on('click', function(){
+            $carouselEl.trigger('prev.owl.carousel');
+        });
+    
+        $('.items-nav-next').on('click', function(){
+            $carouselEl.trigger('next.owl.carousel');
+        });
+
+    })();
+
+
+    $(".owl-item").addClass("col");
 });
 
