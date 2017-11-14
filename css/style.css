@@ -598,6 +598,10 @@ body{
     color: #3c3c3c !important;
 }
 
+.products-carousel{
+    margin-bottom: 80px;
+}
+
 .item-box{
     position: relative;
     margin-bottom: 15px;
@@ -765,4 +769,47 @@ body{
 
 .sale-badge{
     background-color: #e17373;
+}
+
+.content-sale-bar{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/content-sale-bar.jpg);
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 1;
+    padding: 65px 0; 
+}
+
+.content-sale-bar p:first-of-type{
+    font-size: 34px;
+    line-height: 0.75;
+}
+
+.content-sale-bar p:first-of-type span{
+    font-family: 'Crimson Text', serif;
+    font-size: 72px;
+    font-style: italic;
+    color: #c5b486;
+}
+
+.content-sale-bar button{
+    background-color: #c5b486;
+    border: 3px solid transparent;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
+.content-sale-bar button:hover{
+    cursor: pointer;
+    border: solid #c5b486 3px;
+    background-color: transparent;
 }
