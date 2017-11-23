@@ -32,7 +32,7 @@ $(function(){
 
     });
 
-    // Main Carousel Steing
+    // Main Carousel Seting
     var $owl = $(".main-owl-carousel");
     
     $owl.owlCarousel({
@@ -80,6 +80,7 @@ $(function(){
         }
 
     })();
+
     // Items Carousel 
     (function productsCarousel(){      
 
@@ -92,15 +93,23 @@ $(function(){
            });
         }
 
-        $('.items-nav-prev').on('click', function(){
-            var ida = $('.show');
-            console.log(ida);
-            $('#carousel-1').trigger('prev.owl.carousel');
-        });
-    
-        $('.items-nav-next').on('click', function(){
-            $carouselId.trigger('next.owl.carousel');
-        });
+        $('.items-nav-prev').on('click', navigation);
+        $('.items-nav-next').on('click', navigation);
+        
+
+        function navigation(){
+
+            var carouselSet = $(this).parent().attr("data-carousel-set");
+            var currentId = $("."+carouselSet).find(".show").find(".owl-carousel").attr("id");
+            
+            if ($(this).hasClass('items-nav-prev')){
+                $("#"+currentId).trigger('prev.owl.carousel'); 
+            }
+
+            else if($(this).hasClass('items-nav-next')){
+                $("#"+currentId).trigger('next.owl.carousel');
+            }
+        };
 
     })();
 
