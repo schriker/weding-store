@@ -916,3 +916,12 @@ body{
     font-family: 'FontAwesome';
     content: ' \f105';
 }
+
+.store-info-links-bg{
+    margin: 80px 0 0 0;
+    background: #202422;
+    background: -moz-linear-gradient(left, #202422 0%, #202422 50%, #282c2a 50%, #282c2a 100%);
+    background: -webkit-linear-gradient(left, #202422 0%,#202422 50%,#282c2a 50%,#282c2a 100%);
+    background: linear-gradient(to right, #202422 0%,#202422 50%,#282c2a 50%,#282c2a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202422', endColorstr='#282c2a',GradientType=1 );
+}
