@@ -109,7 +109,7 @@ $(function(){
             else if($(this).hasClass('items-nav-next')){
                 $("#"+currentId).trigger('next.owl.carousel');
             }
-        };
+        }
 
     })();
 
