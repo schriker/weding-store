@@ -936,6 +936,10 @@ body{
 }
 
 .store-info-links-bg p{
+    margin: 20px 0 30px 0;
+}
+
+.store-info-links-bg .row div:first-of-type p{
     margin: 20px 0 30px 30px;
 }
 
@@ -958,8 +962,8 @@ body{
 }
 
 .green-bg-color ul{
-    list-style-type: none;
-    padding: 10px 50px 0 20px; 
+    list-style: none;
+    padding: 10px 50px 0 0; 
 }
 
 .green-bg-color ul li{
@@ -982,4 +986,55 @@ body{
     font-family: 'FontAwesome';
     content: '\f105';
     margin-right: 10px;
+}
+
+.newsletter input{
+    border: 0;
+    background-color: #191c1a;
+    color: #414743;
+    font-size: 14px;
+    height: 40px;
+    padding: 10px 0 10px 20px;
+}
+
+.newsletter button{
+    border: 0;
+    background-color: #5f5f5f;
+    color: #b4b4b4;
+    height: 40px;
+    padding: 8px 12px 8px 12px;
+    vertical-align: bottom;
+}
+
+.newsletter button:hover{
+    cursor: pointer;
+    background-color: #c5b486;
+    color: #fff;
+}
+
+.footer-social-icons{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-icons li{
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.footer-social-icons li a{
+    background-color: #191c1a;
+    color: #5f5f5f;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+.footer-social-icons li a:hover{
+    background-color: #c5b486;
+    color: #fff;
 }
