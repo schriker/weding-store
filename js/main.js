@@ -89,7 +89,25 @@ $(function(){
         for(i=0; i<$carouselEl.length; i++){
             var $carouselId = $('#carousel-'+(i+1));
             $carouselId.owlCarousel({
-                items: 4,
+                responsive: {
+                    0:{
+                        autoplay: true,
+                        autoplayTimeout: 2500,
+                        items: 1
+                    },
+
+                    500: {
+                        items: 2
+                    },
+
+                    770:{
+                        items: 3
+                    },
+
+                    980:{
+                        items: 4
+                    }
+                }
            });
         }
 
