@@ -1083,6 +1083,11 @@ body{
     .user-links div{
         justify-content: center !important;
     }
+    .currency{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
  }
 
 @media (max-width: 991.99px) {
