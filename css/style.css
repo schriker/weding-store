@@ -451,7 +451,7 @@ body{
     position: absolute;
     right: 15px;
     bottom: 80px;
-    z-index: 999;
+    z-index: 500;
 }
 
 .c-nav, .items-nav-c{
@@ -880,7 +880,7 @@ body{
     background-color: #fff;
     position: absolute;
     right: 0;
-    top: -33px;
+    top: -32px;
     padding: 6px 8px;
 }
 
@@ -948,7 +948,7 @@ body{
     margin: 20px 0 30px 30px;
 }
 
-.store-info-links-bg .col-4 div:last-of-type p{
+.store-info-links-bg .col-lg-4 div:last-of-type p{
     margin-bottom: 0;
 }
 
@@ -957,7 +957,7 @@ body{
     margin-right: 10px;
 }
 
-.store-info-links-bg .col-4{
+.store-info-links-bg .col-lg-4{
     padding: 45px 0;
 }
 
@@ -1050,16 +1050,77 @@ body{
     padding: 30px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) { 
-    .main-owl-carousel{
-        height: 351px;
+.mobile-menu{
+    display: none;
+}
+
+@media (max-width: 991.99px) {
+    .tabs-row div.col-lg{
+        margin-bottom: 30px;
+    }
+
+    .tabs-row div.col-lg:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .margin-mobile{
+        margin-top: 50px;
+    }
+
+    .desktop-menu{
+        display: none !important;
+    }
+
+    .mobile-menu{
+        display: flex !important;
+    }
+
+    .store-info-links-bg .col-lg-4{
+        text-align: center;
+    }
+
+    .green-bg-color{
+        padding: 45px 0 !important;
+        background: none;
+    }
+
+    .green-bg-color ul{
+        padding: 10px 0 0 0;
+    }
+
+    .store-info-links-bg{
+        background: #202422 !important;
+    }
+
+    .footer-social-icons{
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991.99px) { 
+    .main-owl-carousel{
+        height: 351px;
+    }
+
+    .slide h2{
+        font-size: 50px;
+    }
+
+    .slide p{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
     .main-menu a{
         padding: 15px 10px;
     }
+
+    .sub-menu > li:first-of-type{
+        display: none;
+    }
+
     .main-owl-carousel{
         height: 468px;
     }
