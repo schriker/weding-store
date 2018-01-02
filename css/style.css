@@ -289,7 +289,7 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-    list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+    list-style-image: url(data:0);
 }
 
 .cart ul li{
@@ -297,6 +297,8 @@ body{
     border-bottom: 1px solid #d6d6d6;
     margin-bottom: 25px;
     padding-bottom: 25px;
+    list-style: none;
+    list-style-image: url(data:0);
 }
 
 .item-info{
