@@ -49,6 +49,30 @@ $(function(){
         $owl.trigger('next.owl.carousel');
     });
 
+    (function mobileMenu(){
+
+        var $menuButton = $('.fa-bars');
+        var $closeMenu = $('.close-menu');
+        var $menu = $('.mobile-menu-content');
+
+        $menuButton.on('click', openMenu);
+        $closeMenu.on('click', closeMenu);
+
+        function openMenu(e){
+            e.preventDefault();
+            $menu.css({transform: 'translateY(0%)'});
+
+        }
+
+        function closeMenu(e){
+            e.preventDefault();
+            $menu.css({transform: 'translateY(-100%)'});
+        }
+
+        
+        
+    })();
+
     // Main Page Quantity Selection
     (function quickQuantinty(){
 
